@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		280F51A21F868DAF0084C86D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F51A11F868DAF0084C86D /* AppDelegate.swift */; };
-		280F51A41F868DAF0084C86D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F51A31F868DAF0084C86D /* ViewController.swift */; };
 		280F51A71F868DAF0084C86D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280F51A51F868DAF0084C86D /* Main.storyboard */; };
 		280F51A91F868DAF0084C86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280F51A81F868DAF0084C86D /* Assets.xcassets */; };
 		280F51AC1F868DAF0084C86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280F51AA1F868DAF0084C86D /* LaunchScreen.storyboard */; };
+		28474CA31F86930300E0510A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28474CA21F86930300E0510A /* Survey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		280F519E1F868DAF0084C86D /* SurveyiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		280F51A11F868DAF0084C86D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		280F51A31F868DAF0084C86D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		280F51A61F868DAF0084C86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		280F51A81F868DAF0084C86D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		280F51AB1F868DAF0084C86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280F51AD1F868DAF0084C86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28474CA21F86930300E0510A /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,54 @@
 		280F51A01F868DAF0084C86D /* SurveyiOS15 */ = {
 			isa = PBXGroup;
 			children = (
-				280F51A11F868DAF0084C86D /* AppDelegate.swift */,
-				280F51A31F868DAF0084C86D /* ViewController.swift */,
-				280F51A51F868DAF0084C86D /* Main.storyboard */,
-				280F51A81F868DAF0084C86D /* Assets.xcassets */,
-				280F51AA1F868DAF0084C86D /* LaunchScreen.storyboard */,
-				280F51AD1F868DAF0084C86D /* Info.plist */,
+				280F51B71F86926A0084C86D /* UI StoryBoard */,
+				280F51B61F86925F0084C86D /* View Controller */,
+				280F51B51F8692560084C86D /* Model Controller */,
+				280F51B41F8692500084C86D /* Model */,
+				280F51B81F8692730084C86D /* Resourses */,
 			);
 			path = SurveyiOS15;
+			sourceTree = "<group>";
+		};
+		280F51B41F8692500084C86D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28474CA21F86930300E0510A /* Survey.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		280F51B51F8692560084C86D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		280F51B61F86925F0084C86D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		280F51B71F86926A0084C86D /* UI StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				280F51A51F868DAF0084C86D /* Main.storyboard */,
+				280F51AA1F868DAF0084C86D /* LaunchScreen.storyboard */,
+			);
+			path = "UI StoryBoard";
+			sourceTree = "<group>";
+		};
+		280F51B81F8692730084C86D /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				280F51A11F868DAF0084C86D /* AppDelegate.swift */,
+				280F51A81F868DAF0084C86D /* Assets.xcassets */,
+				280F51AD1F868DAF0084C86D /* Info.plist */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280F51A41F868DAF0084C86D /* ViewController.swift in Sources */,
 				280F51A21F868DAF0084C86D /* AppDelegate.swift in Sources */,
+				28474CA31F86930300E0510A /* Survey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +315,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SurveyiOS15/Info.plist;
+				DEVELOPMENT_TEAM = 2LNKQ65S8U;
+				INFOPLIST_FILE = "$(SRCROOT)/SurveyiOS15/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevelester.SurveyiOS15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +330,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SurveyiOS15/Info.plist;
+				DEVELOPMENT_TEAM = 2LNKQ65S8U;
+				INFOPLIST_FILE = "$(SRCROOT)/SurveyiOS15/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stevelester.SurveyiOS15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
