@@ -12,6 +12,7 @@
 		280F51A91F868DAF0084C86D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280F51A81F868DAF0084C86D /* Assets.xcassets */; };
 		280F51AC1F868DAF0084C86D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 280F51AA1F868DAF0084C86D /* LaunchScreen.storyboard */; };
 		28474CA31F86930300E0510A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28474CA21F86930300E0510A /* Survey.swift */; };
+		28474CA51F869E4700E0510A /* EmojiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28474CA41F869E4700E0510A /* EmojiController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		280F51AB1F868DAF0084C86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		280F51AD1F868DAF0084C86D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28474CA21F86930300E0510A /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		28474CA41F869E4700E0510A /* EmojiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		280F51B51F8692560084C86D /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				28474CA41F869E4700E0510A /* EmojiController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				280F51A21F868DAF0084C86D /* AppDelegate.swift in Sources */,
 				28474CA31F86930300E0510A /* Survey.swift in Sources */,
+				28474CA51F869E4700E0510A /* EmojiController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
